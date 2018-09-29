@@ -22,7 +22,7 @@ class CompleteRegularDailyTasks(TrelloCommand):
         tasks_list = list(filter(lambda card: not self._is_habit(card), tasks_list))
         return tasks_list
 
-    def _is_habit(self, habit_card): # Should be optimized
+    def _is_habit(self, habit_card):
         habits_list = self.trello_client.get_yearly_tasks_list(self.HABITS_LIST_NAME)
         all_habit_card_names = [card.name for card in habits_list.list_cards()]
         return habit_card.name in all_habit_card_names

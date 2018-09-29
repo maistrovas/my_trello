@@ -1,8 +1,7 @@
 from .trello_command_abc import TrelloCommand
 import urllib.request
 from PIL import Image
-import timeit
-import time
+
 
 class NextCheatMeal(TrelloCommand):
     """
@@ -28,13 +27,11 @@ class NextCheatMeal(TrelloCommand):
     @staticmethod
     def find_card(cheat_day_list):
         cheat_meal_card = None
-        start_time = time.time()
         cards = cheat_day_list.list_cards()
         for card in cards:
             if "Place:" in card.name:
                 cheat_meal_card = card
                 break
-        print("--- %s seconds ---" % (time.time() - start_time))
         return cheat_meal_card
 
     @staticmethod

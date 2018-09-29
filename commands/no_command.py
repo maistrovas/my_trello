@@ -13,5 +13,5 @@ class NoCommand(AbstractCommand):
     def _format_commands(self):
         formatted_commands = ''
         for command in self.supporting_commands.keys():
-            formatted_commands += command + '\n'  # Error we have no command_name implemented
+            formatted_commands += command + '\n'
         return formatted_commands
