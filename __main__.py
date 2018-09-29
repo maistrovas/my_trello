@@ -6,7 +6,7 @@ try:
     trello_command = command.create_instance(sys.argv[1])
     trello_command.execute()
 except IndexError:
-    print("Here is example of script usage: >>>'python trello_api cheat_meal'")
+    print("Here is example of script usage: >>>'python trello_api <command_name>'")
 
 
 

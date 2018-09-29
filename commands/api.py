@@ -1,12 +1,11 @@
 from trello import TrelloClient
 import os
 from requests.exceptions import ConnectionError
-from urllib3.exceptions import NewConnectionError
 
 from commands.exceptions import BoardNotFoundException, ListNotFoundException
 
 
-class TrelloAPI(object): # Considet to make it Singelton
+class TrelloAPI(object):
     TRELLO_API_KEY = os.getenv('TRELLO_API_KEY')
     MY_TOKEN = os.getenv('MY_TOKEN')
     TOKEN_SECRET = os.getenv('TOKEN_SECRET')

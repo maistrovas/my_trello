@@ -3,6 +3,8 @@
 *.webloc
 .cprof
 .idea
+cheat_meal.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
