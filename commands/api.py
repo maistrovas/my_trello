@@ -9,7 +9,7 @@ class TrelloAPI(object):
     TRELLO_API_KEY = os.getenv('TRELLO_API_KEY')
     MY_TOKEN = os.getenv('MY_TOKEN')
     TOKEN_SECRET = os.getenv('TOKEN_SECRET')
-    CURRENT_YEAR_BOARD_NAME = 'My 2018 Goals (Year of Canada career and life enhancement )' ## Rename it
+    CURRENT_YEAR_BOARD_NAME = 'My Goals'
     WEEKLY_PLANNING_BOARD_NAME = 'Weekly Planning'
 
     def __init__(self):
